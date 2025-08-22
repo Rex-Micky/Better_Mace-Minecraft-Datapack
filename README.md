@@ -17,7 +17,7 @@
 
 ## **⚙️ How to Install**
 
-1. Download the latest version of the datapack from the [Releases](https://github.com/Rex-Micky/YourRepo/releases) page.  
+1. Download the zip file of the Datapack from this page.  
 2. Find your Minecraft world's save folder.  
 3. Drop the downloaded `.zip` file into the `datapacks` folder inside your world save.  
 4. If you are in the world, run the command `/reload`. If you are just starting the world, the datapack will load automatically.  

@@ -23,14 +23,6 @@
 4. If you are in the world, run the command `/reload`. If you are just starting the world, the datapack will load automatically.  
 5. The datapack should now be installed\! You can verify it's working with the command `/datapack list`.
 
-## **🎮 How to Use / Gameplay**
-
-Explain how players interact with your datapack.
-
-* **Getting Started:** How does a player begin using the features? Is there a custom crafting recipe, a command, or something they need to find in the world?  
-* **Core Mechanics:** Explain the main gameplay loop or features in more detail.  
-* **Commands (if any):** List any user-facing commands that players might need to use.
-
 ## **🔧 Uninstallation**
 
 To uninstall the datapack, simply run the command `/datapack disable "file/your_datapack_name"` and then delete the `.zip` file from your `datapacks` folder.

@@ -1,0 +1,14 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "stone"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

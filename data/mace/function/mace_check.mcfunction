@@ -1,0 +1,1 @@
+execute as @a[nbt={SelectedItem:{id:"minecraft:mace"}}] if items entity @s weapon.offhand * run function mace:store_offhand

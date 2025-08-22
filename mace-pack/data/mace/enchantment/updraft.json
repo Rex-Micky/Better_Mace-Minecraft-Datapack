@@ -1,0 +1,57 @@
+{
+  "description": "Updraft",
+  "anvil_cost": 3,
+  "exclusive_set": "wind_burst",
+  "max_level": 2,
+  "max_cost": {
+    "base": 2,
+    "per_level_above_first": 1
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "weight": 2,
+  "slots": ["mainhand"],
+  "supported_items": ["minecraft:mace"],
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_knockback",
+        "amount": {
+          "type": "linear",
+          "base": 0.25,
+          "per_level_above_first": 0.125
+        },
+        "id": "minecraft:updraft",
+        "operation": "add_value"
+      }
+    ],
+    "post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "levitation",
+          "min_amplifier": 1,
+          "max_amplifier": 1,
+          "min_duration": 3,
+          "max_duration": 5
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "apply_mob_effect",
+          "to_apply": "weakness",
+          "max_amplifier": 1,
+          "min_amplifier": 1,
+          "max_duration": 1,
+          "min_duration": 1
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

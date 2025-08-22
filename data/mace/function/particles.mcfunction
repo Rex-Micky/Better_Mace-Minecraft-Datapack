@@ -1,0 +1,1 @@
+execute as @s at @s run particle dust_pillar{block_state: dirt} ~ ~ ~ 1 0 1 1 200 normal

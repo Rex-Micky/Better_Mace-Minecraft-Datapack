@@ -1,0 +1,50 @@
+{
+  "description": "Momentum",
+  "max_level": 3,
+  "anvil_cost": 4,
+  "max_cost": {
+    "base": 4,
+    "per_level_above_first": 1
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": ["mainhand"],
+  "supported_items": "minecraft:mace",
+  "weight": 2,
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "amount": {
+          "type": "linear",
+          "base": 1,
+          "per_level_above_first": 0.5
+        },
+        "id": "minecraft:momentum",
+        "operation": "add_value"
+        },
+        {
+          "attribute": "attack_speed",
+          "amount": {
+            "type": "linear",
+            "base": 0.1,
+            "per_level_above_first": 0.05
+          },
+          "id": "minecraft:momentum",
+          "operation": "add_value"
+        },
+        {
+          "attribute": "attack_knockback",
+          "amount": {
+            "type": "linear",
+            "base": 0.2,
+            "per_level_above_first": 0.05
+          },
+          "id": "minecraft:momentum",
+          "operation": "add_value"
+        }
+    ]
+  }
+}

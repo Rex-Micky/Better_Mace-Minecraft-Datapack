@@ -1,0 +1,52 @@
+{
+  "description": "Juggernaut",
+  "max_level": 3,
+  "anvil_cost": 5,
+  "max_cost": {
+    "base": 4,
+    "per_level_above_first": 1
+  },
+  "min_cost": {
+    "base": 3,
+    "per_level_above_first": 1
+  },
+  "exclusive_set": "density",
+  "slots": ["mainhand"],
+  "supported_items": "mace",
+  "weight": 1,
+  "effects": {
+    "attributes": [
+      {
+        "attribute": "attack_damage",
+        "amount": {
+          "type": "linear",
+          "base": 1,
+          "per_level_above_first": 0.5
+        },
+        "id": "minecraft:juggernaut",
+        "operation": "add_value"
+      }
+    ],
+    "post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "run_function",
+              "function": "mace:particles"
+            },
+            {
+              "type": "play_sound",
+              "sound": "item.mace.smash_ground",
+              "pitch": 1,
+              "volume": 10
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

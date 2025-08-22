@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 71,
+    "description": "The mace but better.",
+    "supported_formats": [61,71]
+  }
+}

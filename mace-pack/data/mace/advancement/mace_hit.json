@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": { "items": ["minecraft:mace"] }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hit"
+    ]
+  ],
+  "rewards": { "function": "mace:on_hit" }
+}

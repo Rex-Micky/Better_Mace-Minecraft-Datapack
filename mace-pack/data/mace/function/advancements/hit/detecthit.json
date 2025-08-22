@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "hit_detect"
+      },
+      "title": "hit",
+      "hidden": true
+    },
+    "criteria": {
+        "player_hit_with_charged_mace":
+        {
+            "trigger":"minecraft:player_hurt_entity"
+        }
+    },
+    "requirements": [
+      [
+        "player_hit_with_charged_mace"
+      ]
+    ],
+    "rewards":
+    {
+        "function":"mace_charge:playsound"
+    }
+}
